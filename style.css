@@ -1,0 +1,31 @@
+html {background: #fff; width:100%;}
+	body {background: #00ADEF; 
+		margin: 2% ;
+		width:201px;
+		height: 289px;
+    position:relative;
+	}
+body::before, body::after{
+  width:58px;
+  height:38px;
+  background:#fff;
+  position:absolute;
+  content:'';
+}
+body::after {
+  content:'';
+  right:0;
+}
+html::after {
+  background:#fff; 
+  position:absolute; 
+  content:''; 
+  top:136px;
+  width:101px;
+  height:120px;
+  margin-left: calc(2% + 50px);
+  text-align:center;
+  
+	clip-path: polygon(19px 0px, 81px 0px, 59px 45px, 100px 45px, 33px 119px, 39px 69px, 0px 69px);
+  -webkit-clip-path: polygon(19px 0px, 81px 0px, 59px 45px, 100px 45px, 33px 119px, 39px 69px, 0px 69px);
+}
